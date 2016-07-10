@@ -1,0 +1,50 @@
+2016-07-05 20:57:05,346 (4868) [QyxxReqWorker.py-QyxxReqWorker-work 123] INFO: Process begin for shanghai,logger=<logging.Logger object at 0x0318ECD0>
+2016-07-05 20:57:06,510 (4868) [DownLoader.py-DownLoader-outputLog 215] INFO: 更换代理
+2016-07-05 20:57:06,513 (4868) [DownLoader.py-DownLoader-outputLog 215] INFO: 代理更换完成耗时0秒
+2016-07-05 20:57:06,661 (4868) [CrawlerBase.py-CrawlerBase-initConfig 90] INFO: 加载模块配置信息
+2016-07-05 21:53:20,970 (4868) [CrawlerBase.py-CrawlerBase-crawl 162] INFO: 通过关键词（上海大众）开始抓取信息
+2016-07-05 21:56:01,947 (5568) [QyxxReqWorker.py-QyxxReqWorker-work 123] INFO: Process begin for shanghai,logger=<logging.Logger object at 0x033CECD0>
+2016-07-05 21:56:03,010 (5568) [DownLoader.py-DownLoader-outputLog 215] INFO: 更换代理
+2016-07-05 21:56:03,013 (5568) [DownLoader.py-DownLoader-outputLog 215] INFO: 代理更换完成耗时0秒
+2016-07-05 21:56:03,142 (5568) [CrawlerBase.py-CrawlerBase-initConfig 90] INFO: 加载模块配置信息
+2016-07-05 22:31:46,177 (5568) [CrawlerBase.py-CrawlerBase-crawl 162] INFO: 通过关键词（91310115630468169D）开始抓取信息
+2016-07-05 23:04:52,301 (5568) [CrawlerControl.py-CrawlerControl-run_module 140] INFO: -------->开始执行模块 令牌获取 <--------
+2016-07-05 23:13:08,894 (5568) [CrawlerBase.py-CrawlerBase-getWebHtml 560] INFO: 访问https://www.sgs.gov.cn/notice/search/popup_captcha，获取输出参数 token,
+2016-07-05 23:13:12,997 (5568) [crawler_util.py-crawler_util-request 169] INFO: 开始调用download获取页面内容
+2016-07-05 23:13:13,000 (5568) [DownLoader.py-DownLoader-outputLog 215] INFO: 使用代理 None
+2016-07-05 23:13:14,582 (5568) [crawler_util.py-crawler_util-request 171] INFO: 通过download获取页面内容结束
+2016-07-05 23:13:15,319 (5568) [crawler_util.py-crawler_util-moduleSleep 128] INFO: 休眠2秒
+2016-07-05 23:19:23,923 (5568) [common_util.py-common_util-run_function 34] INFO: 使用参数 html 执行方法 getToken
+2016-07-05 23:19:23,928 (5568) [CrawlerShanghai.py-CrawlerShanghai-getToken 48] INFO: token: 20adf313-04f1-4387-ba01-a374a4bc2dde
+2016-07-05 23:27:36,049 (5568) [CrawlerControl.py-CrawlerControl-run_module 140] INFO: -------->开始执行模块 搜索列表 <--------
+2016-07-05 23:27:42,677 (5568) [CrawlerBase.py-CrawlerBase-fetchWebContent 636] INFO: 访问公司列表，期望输出参数 search_list,page_list,page_nos,
+2016-07-05 23:27:42,680 (5568) [common_util.py-common_util-run_function 34] INFO: 使用参数 token,company_key 执行方法 <lambda>
+2016-07-05 23:29:13,438 (5568) [crawler_util.py-crawler_util-request 169] INFO: 开始调用download获取页面内容
+2016-07-05 23:29:52,104 (5568) [DownLoader.py-DownLoader-outputLog 215] INFO: 使用代理 None
+2016-07-05 23:30:23,556 (5568) [crawler_util.py-crawler_util-request 171] INFO: 通过download获取页面内容结束
+2016-07-05 23:31:41,694 (5568) [crawler_util.py-crawler_util-moduleSleep 128] INFO: 休眠2秒
+2016-07-05 23:33:16,552 (5568) [common_util.py-common_util-run_function 34] INFO: 使用参数 page_list 执行方法 page_nos
+2016-07-05 23:33:28,134 (5568) [CrawlerControl.py-CrawlerControl-run_module 140] INFO: -------->开始执行模块 获取公司信息 <--------
+2016-07-05 23:33:54,285 (5568) [CrawlerControl.py-CrawlerControl-run_module 140] INFO: -------->开始执行模块 抓取公司前的预处理 <--------
+2016-07-05 23:33:56,430 (5568) [common_util.py-common_util-run_function 34] INFO: 使用参数 info 执行方法 prepare
+2016-07-05 23:35:03,684 (5568) [CrawlerControl.py-CrawlerControl-run_module 140] INFO: -------->开始执行模块 基本信息 <--------
+2016-07-05 23:35:03,687 (5568) [CrawlerBase.py-CrawlerBase-fetchSpecificCompany 676] INFO: 访问 (上海界龙集团有限公司) 的基本信息，期望输出参数 gdxq_list,
+2016-07-06 00:02:57,490 (5568) [crawler_util.py-crawler_util-request 169] INFO: 开始调用download获取页面内容
+2016-07-06 00:02:57,678 (5568) [DownLoader.py-DownLoader-outputLog 215] INFO: 使用代理 None
+2016-07-06 00:04:08,415 (5568) [DownLoader.py-DownLoader-outputLog 215] INFO: 返回码为502，休眠一分钟
+2016-07-06 00:05:08,546 (5568) [DownLoader.py-DownLoader-outputLog 215] ERROR: 获取页面内容异常：Traceback (most recent call last):
+  File "D:/workspace/crawler_new\HttpRequst\DownLoader.py", line 182, in request
+    resp.raise_for_status()
+  File "C:\Python27\lib\site-packages\requests\models.py", line 840, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+HTTPError: 502 Server Error: Bad Gateway for url: https://www.sgs.gov.cn/notice/notice/view?uuid=faLkJuo3BeMdOlmLfkZPdzIxgOVldF0n&tab=01
+
+2016-07-06 00:05:08,548 (5568) [DownLoader.py-DownLoader-outputLog 215] INFO: 使用代理 None
+2016-07-06 00:05:38,851 (5568) [DownLoader.py-DownLoader-outputLog 215] INFO: 返回码为502，休眠一分钟
+2016-07-06 00:06:38,859 (5568) [DownLoader.py-DownLoader-outputLog 215] ERROR: 获取页面内容异常：Traceback (most recent call last):
+  File "D:/workspace/crawler_new\HttpRequst\DownLoader.py", line 182, in request
+    resp.raise_for_status()
+  File "C:\Python27\lib\site-packages\requests\models.py", line 840, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+HTTPError: 502 Server Error: Bad Gateway for url: https://www.sgs.gov.cn/notice/notice/view?uuid=faLkJuo3BeMdOlmLfkZPdzIxgOVldF0n&tab=01
+
